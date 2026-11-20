@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tipo de Mapa"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/rgTipoMapa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="24dp">
+
+        <RadioButton
+            android:id="@+id/rbVetorial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vetorial (Padrão)" />
+
+        <RadioButton
+            android:id="@+id/rbSatelite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Satélite" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forma de Navegação"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/rgModoNavegacao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="32dp">
+
+        <RadioButton
+            android:id="@+id/rbNorthUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="North Up (Norte fixo no topo - Padrão)" />
+
+        <RadioButton
+            android:id="@+id/rbCourseUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Course Up (Orientado pelo rumo do usuário)" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnSalvarConfig"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Salvar Configurações" />
+</LinearLayout>
